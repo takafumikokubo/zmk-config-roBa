@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: roBa}
 layers:
-  default:
+  default_mac:
   - Q
   - W
   - E
@@ -11,36 +11,36 @@ layers:
   - {t: I, h: SCROLL}
   - O
   - P
-  - A
+  - {t: A, h: LCTRL}
   - S
   - D
   - F
   - G
-  - Sft+Gui+S
-  - '-'
+  - '&mkp MCLK'
+  - ;
   - H
   - J
   - K
   - L
-  - ''''
+  - '-'
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
-  - B
+  - {t: B, h: Bluetooth}
   - ':'
-  - ;
+  - /
   - N
   - M
   - ','
   - .
-  - /
-  - LCTRL
-  - LEFT WIN
+  - '='
+  - LEFT SHIFT
   - LEFT ALT
-  - {t: '&to_layer_0 INT_HENKAN', h: '6'}
+  - LCTRL
+  - {t: LANG HANJA, h: LEFT GUI}
   - {t: SPACE, h: NUM}
-  - {t: '&to_layer_0 INT_MUHENKAN', h: ARROW}
+  - {t: TAB, h: ARROW}
   - BACKSPACE
   - {t: ENTER, h: FUNCTION}
   - DEL
@@ -82,7 +82,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LANGUAGE 1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -264,7 +264,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '6':
+  Bluetooth:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -282,7 +282,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: default_mac, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -291,7 +291,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -302,12 +302,56 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
+  default_win:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LCTRL}
+  - S
+  - D
+  - F
+  - G
+  - '&mkp MCLK'
+  - ;
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - {t: Z, h: LEFT SHIFT}
+  - X
+  - C
+  - V
+  - {t: B, h: Bluetooth}
+  - ':'
+  - /
+  - N
+  - M
+  - ','
+  - .
+  - '='
+  - LSHFT
+  - LALT
+  - LCTRL
+  - {t: LANG HANJA, h: LCTRL}
+  - {t: SPACE, h: NUM}
+  - {t: TAB, h: ARROW}
+  - BSPC
+  - RET
+  - DEL
 combos:
 - p: [11, 12]
   k: TAB
